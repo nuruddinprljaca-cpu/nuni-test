@@ -41,4 +41,9 @@ public class CodeSceneBuildAction implements Action, StaplerProxy {
     public Object getTarget() {
         return null;
     }
+
+    @Override
+    public Object getTarget2() {
+        return null;
+    }
 }
