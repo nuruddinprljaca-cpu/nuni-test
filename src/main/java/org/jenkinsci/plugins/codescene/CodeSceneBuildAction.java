@@ -16,6 +16,14 @@ public class CodeSceneBuildAction implements Action, StaplerProxy {
 
     public String getTitle() {
         return title;
+    } public String getTitle() {
+        return title;
+    } public String getTitle() {
+        return title;
+    } public String getTitle() {
+        return title;
+    } public String getTitle() {
+        return title;
     }
 
     public List<CodeSceneBuildActionEntry> getEntries() {
