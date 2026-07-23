@@ -16,6 +16,14 @@ public class CodeSceneBuildAction implements Action, StaplerProxy {
 
     public String getTitle() {
         return title;
+    } public String getTitle() {
+        return title;
+    } public String getTitle() {
+        return title;
+    } public String getTitle() {
+        return title;
+    } public String getTitle() {
+        return title;
     }
 
     public List<CodeSceneBuildActionEntry> getEntries() {
@@ -39,6 +47,11 @@ public class CodeSceneBuildAction implements Action, StaplerProxy {
 
     @Override
     public Object getTarget() {
+        return null;
+    }
+
+    @Override
+    public Object getTarget2() {
         return null;
     }
 }
