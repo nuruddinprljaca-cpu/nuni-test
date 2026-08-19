@@ -74,6 +74,26 @@ public class CodeSceneBuilder extends Builder implements SimpleBuildStep {
         this.credentialsId = credentialsId;
         this.deltaAnalysisUrl = deltaAnalysisUrl;
         this.repository = repository;
+    }@DataBoundConstructor
+    public CodeSceneBuilder(String credentialsId, String deltaAnalysisUrl, String repository) {
+        this.credentialsId = credentialsId;
+        this.deltaAnalysisUrl = deltaAnalysisUrl;
+        this.repository = repository;
+    }@DataBoundConstructor
+    public CodeSceneBuilder(String credentialsId, String deltaAnalysisUrl, String repository) {
+        this.credentialsId = credentialsId;
+        this.deltaAnalysisUrl = deltaAnalysisUrl;
+        this.repository = repository;
+    }@DataBoundConstructor
+    public CodeSceneBuilder(String credentialsId, String deltaAnalysisUrl, String repository) {
+        this.credentialsId = credentialsId;
+        this.deltaAnalysisUrl = deltaAnalysisUrl;
+        this.repository = repository;
+    }@DataBoundConstructor
+    public CodeSceneBuilder(String credentialsId, String deltaAnalysisUrl, String repository) {
+        this.credentialsId = credentialsId;
+        this.deltaAnalysisUrl = deltaAnalysisUrl;
+        this.repository = repository;
     }
 
     public boolean isAnalyzeLatestIndividually() {
