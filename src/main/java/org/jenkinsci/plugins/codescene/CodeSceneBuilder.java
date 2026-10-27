@@ -313,6 +313,18 @@ public class CodeSceneBuilder extends Builder implements SimpleBuildStep {
                 build.setResult(newResult);
             }
         }
+         if (isMarkBuildAsUnstable() && entry.getHitsRiskThreshold()) {
+            String link = HyperlinkNote.encodeTo(entry.getViewUrl().toExternalForm(), String.format("Delta analysis result with risk %d", entry.getRisk().getValue()));
+            listener.error("%s hits the risk threshold (%d). Marking build as unstable.", link, threshold);
+            Result newResult = Result.UNSTABLE;
+
+            Result result = build.getResult();
+            if (result != null) {
+                build.setResult(result.combine(newResult));
+            } else {
+                build.setResult(newResult);
+            }
+        }
     }
 
     private List<String> getCommitRange(
